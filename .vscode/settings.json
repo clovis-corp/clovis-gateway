@@ -1,0 +1,8 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "files.eol": "\n",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 4
+}
