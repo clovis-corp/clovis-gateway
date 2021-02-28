@@ -17,11 +17,12 @@ export class ClovisGateway
     }
 
     async handleDisconnect() {
-        console.log('2');
+        console.log('Disconnect');
     }
 
     @SubscribeMessage('event')
     async onChat(client: Socket, params: object) {
+        console.log(params);
         client.broadcast.emit('chat', params);
     }
 }
