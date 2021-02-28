@@ -12,6 +12,8 @@ export class AppController {
 
     @Post()
     emmitCommand(@Body() command: object) {
+        console.log(command);
+
         this.appService.emitCommand(command);
     }
 }
