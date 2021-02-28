@@ -23,6 +23,6 @@ export class ClovisGateway
     @SubscribeMessage('event')
     async onChat(client: Socket, params: object) {
         console.log(params);
-        client.broadcast.emit('chat', params);
+        client.broadcast.emit('event', params);
     }
 }
